@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS1.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Tweet Sentiment Analyzer</h2>
+        <textarea id="tweetInput" placeholder="Enter a tweet..."></textarea>
+        <button onclick="analyzeTweet()">Analyze</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='JS1.js') }}"></script>
+</body>
+</html>
