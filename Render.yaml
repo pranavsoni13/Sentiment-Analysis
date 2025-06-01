@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sentiment-analysis
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    repo: https://github.com/pranavsoni13/Sentiment-Analysis
+    branch: main
+    autoDeploy: true
+    
